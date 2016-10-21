@@ -31,10 +31,6 @@ var routes = Routes()
 routes.add(method: .get, uri: "/", handler: { request, response in
     response.setHeader(.contentType, value: "text/html")
     
-    
-    let asset = AVAsset(url: URL(string: "http://gaana99.com/fileDownload/Songs/128/28995.mp3")!)
-    let composition = AVMutableVideoComposition()
-    
     response.appendBody(string: "<html><title>Hello, world!</title><body>Hello, world!</body></html>")
     
     response.completed()
@@ -54,10 +50,10 @@ routes.add(method: .get, uri: "/name") { (request, response) in
 }
 
 // Add the routes to the server.
-server.addRoutes(routes)
+//server.addRoutes(routes)
 
 let moreRoutes = makeURLRoutes()
-//server.addRoutes(moreRoutes)
+server.addRoutes(moreRoutes)
 
 // Set a listen port of 8181
 server.serverPort = 8181
