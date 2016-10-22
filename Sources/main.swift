@@ -21,7 +21,6 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 import Dispatch
-import AVFoundation
 
 // Create HTTP server.
 let server = HTTPServer()
