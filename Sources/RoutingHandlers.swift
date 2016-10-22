@@ -43,9 +43,9 @@ func makeURLRoutes() -> Routes {
     })
     
     // API version 1
-    var api1Routes = Routes(baseUri: "/v1")
+    var api1Routes = Routes(baseUri: "/api/v1")
     // API version 2
-    var api2Routes = Routes(baseUri: "/v2")
+    var api2Routes = Routes(baseUri: "/api/v2")
     
     // Add the main API calls to version 1
     api1Routes.add(routes: api)
